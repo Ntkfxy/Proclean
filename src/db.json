@@ -1,0 +1,30 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "General Cleaning",
+      "description": "Routine cleaning for your home including dusting, sweeping, mopping, and bathroom cleaning.",
+      "price": 500,
+      "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6954?auto=format&fit=crop&q=80&w=800",
+      "duration": "2-3 Hours"
+    },
+    {
+      "id": 2,
+      "name": "Deep Cleaning",
+      "description": "Thorough cleaning of every corner, including inside cabinets, behind appliances, and window tracks.",
+      "price": 1500,
+      "image": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=800",
+      "duration": "5-6 Hours"
+    },
+    {
+      "id": 3,
+      "name": "Laundry & Ironing",
+      "description": "Professional washing, drying, and ironing of your clothes with care for different fabrics.",
+      "price": 300,
+      "image": "https://images.unsplash.com/photo-1545173168-9f1947eebb9f?auto=format&fit=crop&q=80&w=800",
+      "duration": "As per load"
+    }
+  ],
+  "bookings": [],
+  "users": []
+}
