@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import cleaningService from "../../service/cleaning.service";
 import Swal from "sweetalert2";
 import Card from "../../components/Card";
-import api from "../../service/api";
 
 interface CreateServiceForm {
   name: string;
