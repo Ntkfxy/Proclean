@@ -62,33 +62,21 @@ const CreateService: React.FC = () => {
   };
 
   // -------------------
-  // Upload Image
-  // -------------------
-  const uploadImage = async () => {
-    if (!imageFile) return "";
-
-    const form = new FormData();
-    form.append("file", imageFile);
-
-    const res = await api.post("/upload", form, {
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    });
-
-    return res.data.url;
-  };
-
-  // -------------------
   // Submit
   // -------------------
   const handleSubmit = async (e: FormEvent) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  setIsSubmitting(true);
+    const error = validateForm();
+    if (error) {
+      setFormError(error);
+      return;
+    }
 
-  try {
- const form = new FormData();
+    setIsSubmitting(true);
+
+    try {
+      const form = new FormData();
     form.append("name", formData.name);
     form.append("details", formData.details);
     form.append("price", String(formData.price));

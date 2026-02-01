@@ -5,7 +5,6 @@ import Swal from "sweetalert2";
 import { Service } from "../../types";
 import Button from "../../components/Button";
 import Card from "../../components/Card";
-import api from "../../service/api";
 
 const EditService: React.FC = () => {
   const { id } = useParams<{ id: string }>();
